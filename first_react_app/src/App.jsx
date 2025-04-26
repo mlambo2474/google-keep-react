@@ -68,6 +68,7 @@ const App = () => {
           editNote={editNote}
         />
       )}
+      
     </div>
   );
 };
