@@ -14,6 +14,10 @@
     transition: 0.8s;
     height: 100%;
   }
+  .sidebar:hover {
+    width: 200px; /* or whatever width fits your text */
+  }
+  
   .sidebar-hover {
       box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
       0 2px 6px 2px rgba(60, 64, 67, 0.149);
@@ -21,7 +25,7 @@
   }
   .active {
     background-color: #fef0c3;
-    border-radius: 50%;
+    border-radius: 100%;
     color: black;
   }
   .active:hover {
@@ -57,12 +61,13 @@
     border-bottom-right-radius: 25px;
   }
   
-  .sidebar-active-item {
+  .sidebar .active-item {
     background-color: #fef0c3;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+
   }
   
-  .sidebar-active-item:hover {
+  .sidebar .active-item:hover {
     background-color: #fef0c3;
   }

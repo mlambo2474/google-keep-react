@@ -18,7 +18,9 @@ const Note = (props) => {
   const mouseLeaveHandler = () => {
     setOnHover(false);
   };
-  const handleDeleteNote = () => {
+  const handleDeleteNote = (e) => {
+    
+    e.stopPropagation(); // 👈 prevent the modal fromng openi
     props.deleteNote(note.id);
   };
 
